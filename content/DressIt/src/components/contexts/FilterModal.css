@@ -1,0 +1,65 @@
+.filter-container {
+  position: fixed;
+  top: 0;
+  right: -40%; /* Comienza fuera de la pantalla */
+  width: 40%; /* Ocupa el 40% de la pantalla */
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease; /* Animación de deslizamiento */
+  z-index: 1000;
+}
+
+.filter-container.show {
+  right: 0; /* Se desliza a la vista */
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filter-by-text {
+  font-weight: bold;
+}
+
+.filter-section {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter-title {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-options {
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

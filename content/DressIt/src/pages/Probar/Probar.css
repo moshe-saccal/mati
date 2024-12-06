@@ -1,0 +1,245 @@
+#Probar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+    min-height: calc(100vh - 65px);
+    background-color: black;
+}
+#Probar h1 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -3px;
+    font-size: 2.5em;     
+    cursor: pointer;
+    color: white;
+    animation: slideIn 1s ease-out;
+}
+#Probar .video {
+    width: 80%;
+
+    max-height: 60vh;
+}
+#Probar .imagenCross {
+    width: 80%;
+    position: relative;
+}
+#Probar .imagenCross .ImagenPrenda {
+    width: 100%;
+    max-height: 50vh;
+    height: auto;
+}
+#Probar .imagenCross .x {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    cursor: pointer;
+
+}
+#Probar .takePicture {
+    width: 80%;
+
+    background-color: black;
+    border-radius: 40px;
+}
+
+#Probar .pictureOptions {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+#Probar .form-control {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 10000;
+}
+#Probar .pictureOptions .contenedor {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+#Probar .pictureOptions img {
+    width: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 30px;
+}
+.cargando .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    height: 96px;
+    width: 96px;
+    animation: rotate_3922 1.2s linear infinite;
+    background-color: #9b59b6;
+    background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  }
+  
+  .cargando .container span {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #9b59b6;
+    background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  }
+  
+  .cargando .container span:nth-of-type(1) {
+    filter: blur(5px);
+  }
+  
+  .cargando .container span:nth-of-type(2) {
+    filter: blur(10px);
+  }
+  
+  .cargando .container span:nth-of-type(3) {
+    filter: blur(25px);
+  }
+  
+  .cargando .container span:nth-of-type(4) {
+    filter: blur(50px);
+  }
+  
+  .cargando .container::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: solid 5px #ffffff;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate_3922 {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  .cargando h3 {
+    color: white;
+    margin-top: 200px;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+.cargando {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100000000000000;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ProbarResultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    min-height: calc(100vh - 65px);
+    background-color: white;
+}
+#ProbarResultado h1 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -7px;
+    font-size: 3.5em;     
+    cursor: pointer;
+    color: #000000;
+    height: 70px;
+    animation: slideIn 1s ease-out;
+}
+#ProbarResultado .imageResultado {
+    height: calc(100vh - 65px - 90px);
+    max-width: 100%;
+    object-fit: cover;
+}
+#ProbarResultado .botones {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 120px;
+    padding: 0 20px;
+    z-index: 1000000000;
+}
+#ProbarResultado .botones .comprar {
+    width: 60%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #2170E8;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+#ProbarResultado .botones .volver {
+    width: 35%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#NavProbar {
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    width: 100%;
+    position: sticky;
+    bottom: 0px; 
+    z-index: 1000; 
+}
+
+#NavProbar .search {
+    cursor: pointer;
+    margin: 0 50px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 5px solid white;
+    border-radius: 100000000px;
+    margin-top: -65px;
+}
+#NavProbar .home, #NavProbar .profile {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#NavProbar .home img, #NavProbar .profile img {
+    width: 30px;
+    height: 30px;
+}
+#NavProbar .home h4, #NavProbar .profile h4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+}

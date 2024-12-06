@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#Register {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#Register h1 {
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -8px;
+    font-size: 4em;     
+    color: #000000;
+}
+#Register form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+#Register form input {
+    width: 60vw;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+#Register form input::placeholder {
+    font-weight: 600;
+}
+#Register form .error {
+    color: red;
+    width: 60vw;
+    text-align: center;
+    margin-top: 10px;
+}
+#Register form button {
+    font-family: "Montserrat", sans-serif;
+    width: 60vw;
+    letter-spacing: -2px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #000000;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+#Register form .link {
+    cursor: pointer;
+   text-align: right;
+   text-decoration: none;
+   color: #2170E8;
+   margin-top: 3px;
+   font-size: 0.9em;
+   font-family: "Roboto", sans-serif;
+}
+#Register .Barra {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+#Register .Barra hr {
+    height: 1px;
+    width: 45%;
+    background-color: #000000;
+}
+#Register .logExtern {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+#Register .logExtern h3 {
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+#Register .logExtern img {
+    margin-left: 5px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+#Register h2 {
+    font-size: 1.3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+#Register .buttonLink {
+    font-family: "Montserrat", sans-serif;
+    width: 40vw;
+    letter-spacing: -2px;
+    height: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#Register .loginGoogle {
+    width: 40vw !important;
+    height: 40px !important;
+    opacity: 0 !important;
+    position: absolute;
+    z-index: 1000 !important;
+} 

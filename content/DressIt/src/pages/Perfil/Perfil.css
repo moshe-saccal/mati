@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+#Perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    min-height: calc(100vh - 65px);
+}
+#Perfil .profilePicture {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 90000px;
+    border: 3px solid black;
+}
+#Perfil h2 {
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+}
+#Perfil .numberProfile {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-evenly   ;
+}
+#Perfil .numberProfile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Perfil .numberProfile div h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+}
+#Perfil .numberProfile div h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+}
+#Perfil .follow {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 2px 20px;
+}
+#Perfil hr {
+    margin-top: 20px;
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+}
+#Perfil .articulos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#Perfil .articulos .buttonLink {
+    align-self: flex-end;
+}
+#Perfil .productos {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10px;
+    justify-content: flex-start;
+    gap: 10px; /* Ajusta el espacio entre los elementos según tu preferencia */
+}
+#Perfil .productos .producto {
+    flex: 0 1 calc(33.33333333333% - 10px); /* Ajusta el ancho de cada producto */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ajusta el espacio inferior según tu preferencia */
+}
+#Perfil .productos .producto .productoImg {
+    position: relative;
+}
+#Perfil .productos .producto .productoImg img{
+    height: auto;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#Perfil .productos .producto .productoImg h6 {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    padding: 2px 10px;
+    font-size: 0.7em;
+    font-weight: 900;
+    background-color: #EDE8D0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+#Perfil .productos .producto h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+}
+.width100 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot-wave {
+    margin-bottom: 30px;
+    --uib-size: 50px;
+    --uib-speed: 0.8s;
+    --uib-color: #0d0909;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--uib-size);
+    height: calc(var(--uib-size) * 0.17);
+    padding-top: calc(var(--uib-size) * 0.34);
+  }
+  
+  .dot-wave__dot {
+    width: 100%;
+    flex-shrink: 0;
+    width: calc(var(--uib-size) * 0.17);
+    height: calc(var(--uib-size) * 0.17);
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    will-change: transform;
+  }
+  
+  .dot-wave__dot:nth-child(1) {
+    animation: jump824 var(--uib-speed) ease-in-out
+      calc(var(--uib-speed) * -0.45) infinite;
+  }
+  
+  .dot-wave__dot:nth-child(2) {
+    animation: jump824 var(--uib-speed) ease-in-out
+      calc(var(--uib-speed) * -0.3) infinite;
+  }
+  
+  .dot-wave__dot:nth-child(3) {
+    animation: jump824 var(--uib-speed) ease-in-out
+      calc(var(--uib-speed) * -0.15) infinite;
+  }
+  
+  .dot-wave__dot:nth-child(4) {
+    animation: jump824 var(--uib-speed) ease-in-out infinite;
+  }
+  
+  @keyframes jump824 {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(-200%);
+    }
+  }
+  

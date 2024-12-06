@@ -1,0 +1,74 @@
+#Prenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    min-height: calc(100vh - 65px);
+}
+#Prenda .width100 {
+    margin-top: 250px;
+}
+#Prenda h1 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -7px;
+    font-size: 3.5em;     
+    cursor: pointer;
+    color: #000000;
+    animation: slideIn 1s ease-out;
+}
+#Prenda hr {
+    width: 100%;
+    border: 1px solid black;
+}
+#Prenda .flecha{
+    align-self: flex-start;
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#Prenda h2 {
+    font-size: 1.8;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+#Prenda h3 {
+    color: gray;
+}
+#Prenda .prenda {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+#Prenda h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 900;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+#Prenda .celeste {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+#Prenda .negro {
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    width: 30%;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+}
